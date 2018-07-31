@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -282,7 +285,7 @@ footer ul.contact li a {
   color: #3D9B35;
   background: #fff;
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   padding: 6px;
   transition: color 0.2s ease;
 }
@@ -340,11 +343,11 @@ footer .copy {
     padding: 0;
     opacity: 0;
     z-index: -1;
-    transition: opacity 0.3s ease;
   }
   nav.open {
     z-index: 1;
     opacity: 1;
+    transition: opacity 0.3s ease;
   }
   nav button.close-menu {
     display: block;
@@ -431,8 +434,8 @@ footer .copy {
   footer ul.contact li a {
     width: 30px;
     height: 30px;
-    font-size: 20px;
-    padding: 4px;
+    font-size: 18px;
+    line-height: 18px;
   }
   footer .copy {
     margin-top: 20px;
@@ -493,19 +496,29 @@ footer .copy {
     line-height: 46px;
   }
 }
+.contact .form-success {
+  background: #f0cc01;
+  color: #000;
+  padding: 5px 20px;
+  font-size: 20px;
+  width: 100%;
+  margin: 40px auto 20px;
+  display: none;
+}
 .contact .form-fields {
   margin-top: 60px;
+  width: 100%;
+  max-width: 600px;
 }
 .contact .form-fields .form-field {
-  width: 600px;
-  max-width: 100%;
+  width: 100%;
   color: #fff;
   height: 45px;
   padding: 0 17px;
   font-size: 17px;
   background-color: #3D9B35;
   border: 0;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 10px;
 }
 .contact .form-fields .form-field:focus {
   outline: none;
@@ -516,8 +529,6 @@ footer .copy {
   margin-bottom: 30px;
 }
 .contact .form-fields textarea.form-field {
-  width: 600px;
-  max-width: 100%;
   height: 200px;
   padding: 10px 17px;
 }
@@ -539,12 +550,11 @@ footer .copy {
 }
 .contact .form-fields .required-input-wrapper {
   position: relative;
-  display: inline-block;
 }
 .contact .form-fields .required-input-wrapper .required-input {
   position: absolute;
   top: 20px;
-  right: 50px;
+  right: 20px;
   font-size: 17px;
   opacity: 0.5;
   user-select: none;
@@ -578,4 +588,20 @@ footer .copy {
 .contact input.form-submit:hover,
 .contact input.form-submit:focus {
   background-color: #3D9B35;
+}
+.contact input.form-submit:focus {
+  outline: 1px solid #3D9B35;
+  outline-offset: 4px;
+}
+@media (max-width: 600px) {
+  .contact .form-fields .form-field {
+    font-size: 14px;
+  }
+  .contact .form-fields .required-input-wrapper {
+    position: relative;
+  }
+  .contact .form-fields .required-input-wrapper .required-input {
+    top: 24px;
+    font-size: 14px;
+  }
 }

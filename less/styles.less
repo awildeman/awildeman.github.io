@@ -1,6 +1,11 @@
 @green: #3D9B35;
+@yellow: #f0cc01;
 @text: #444;
 @error: #B02109;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -351,7 +356,7 @@ footer {
         color: @green;
         background: #fff;
         text-align: center;
-        font-size: 30px;
+        font-size: 24px;
         padding: 6px;
         transition: color 0.2s ease;
 
@@ -421,11 +426,11 @@ footer {
     padding: 0;
     opacity: 0;
     z-index: -1;
-    transition: opacity 0.3s ease;
 
     &.open {
       z-index: 1;
       opacity: 1;
+      transition: opacity 0.3s ease;
     }
 
     button.close-menu {
@@ -530,8 +535,8 @@ footer {
         a {
           width: 30px;
           height: 30px;
-          font-size: 20px;
-          padding: 4px;
+          font-size: 18px;
+          line-height: 18px;
         }
       }
     }
@@ -609,19 +614,30 @@ footer {
 
 // Contact
 .contact {
+  .form-success {
+    background: @yellow;
+    color: #000;
+    padding: 5px 20px;
+    font-size: 20px;
+    width: 100%;
+    margin: 40px auto 20px;
+    display: none;
+  }
+
   .form-fields {
     margin-top: 60px;
+    width: 100%;
+    max-width: 600px;
 
     .form-field {
-      width: 600px;
-      max-width: 100%;
+      width: 100%;
       color: #fff;
       height: 45px;
       padding: 0 17px;
       font-size: 17px;
       background-color: @green;
       border: 0;
-      margin: 10px 0 10px 0;
+      margin: 10px 0 10px;
 
       &:focus {
         outline: none;
@@ -635,8 +651,6 @@ footer {
     }
 
     textarea.form-field {
-      width: 600px;
-      max-width: 100%;
       height: 200px;
       padding: 10px 17px;
     }
@@ -663,12 +677,11 @@ footer {
 
     .required-input-wrapper {
       position: relative;
-      display: inline-block;
 
       .required-input {
         position: absolute;
         top: 20px;
-        right: 50px;
+        right: 20px;
         font-size: 17px;
         opacity: 0.5;
         user-select: none;
@@ -706,6 +719,30 @@ footer {
 
     &:hover, &:focus {
       background-color: @green;
+    }
+
+    &:focus {
+      outline: 1px solid @green;
+      outline-offset: 4px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    .form-fields {
+      .form-field {
+        font-size: 14px;
+      }
+
+      .required-input-wrapper {
+        position: relative;
+
+        .required-input {
+          top: 24px;
+          font-size: 14px;
+        }
+      }
     }
   }
 }

@@ -26,3 +26,6 @@ fields:
 required:
   en: Required Field
   fr: Required Field
+form-success:
+  en: Success, your message has been sent! Thanks for getting in touch!
+  fr: Success, your message has been sent! Thanks for getting in touch!
