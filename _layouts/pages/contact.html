@@ -1,0 +1,39 @@
+---
+layout: page
+---
+<div class="contact">
+  <h2>{{site.data.contact.title[page.lang]}}</h2>
+  <p>{{site.data.contact.text[page.lang]}}</p>
+  <!-- <form action="https://formspree.io/{{site.email}}" method="post"> -->
+  <form action="" method="post">
+    <div class="form-fields">
+      <div>
+        <div class="required-input-wrapper">
+          <input placeholder="{{site.data.contact.fields.name.placeholder[page.lang]}}" class="form-field" type="text" id="full-name" name="full-name" required>
+          <label class="screenreader" for="full-name">{{site.data.contact.fields.name.label[page.lang]}}</label>
+          <span class="required-input noselect">{{site.data.contact.required[page.lang]}}</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="required-input-wrapper">
+          <input placeholder="{{site.data.contact.fields.email.placeholder[page.lang]}}" class="form-field" type="email" id="email" name="_replyto" required>
+          <label class="screenreader" for="email">{{site.data.contact.fields.email.label[page.lang]}}</label>
+          <span class="required-input noselect">{{site.data.contact.required[page.lang]}}</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="required-input-wrapper">
+          <textarea class="form-field" id="message" name="message" required></textarea>
+          <label class="screenreader" for="message">{{site.data.contact.fields.message.label[page.lang]}}</label>
+          <span class="required-input noselect">{{site.data.contact.required[page.lang]}}</span>
+        </div>
+      </div>
+
+      <input type="hidden" name="_next" value="{{page.url}}?form=submitted" />
+      <input type="text" name="_gotcha" style="display:none" />
+    </div>
+    <input class="form-submit" type="submit" value="Submit"/>
+  </form>
+</div>

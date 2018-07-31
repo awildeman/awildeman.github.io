@@ -1,0 +1,8 @@
+---
+layout: page
+---
+
+<h2>{{site.data.about.about-title[page.lang]}}</h2>
+<p>{{site.data.about.about-text[page.lang] | newline_to_br | replace: '<br />', '</p><p>'}}</p>
+<a href="/{{page.lang}}/contact">{{site.data.about.link-text[page.lang]}}</a>
+<img class="photo" src="/img/AboutAmanda.jpg" alt="Amanda Wildeman">

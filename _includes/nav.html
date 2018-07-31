@@ -1,0 +1,20 @@
+<!-- Navigation -->
+<nav>
+  <div class="wrapper">
+    {% assign url = page.url | replace: '/fr/', '' | replace: '/en/', '' %}
+    <ul class="lang">
+      <li><a class="{% if page.url contains '/en/' %}active{% endif %}" href="/en/{{url}}">EN</a></li>
+      <li><a class="{% if page.url contains '/fr/' %}active{% endif %}" href="/fr/{{url}}">FR</a></li>
+    </ul>
+    <button class="close-menu"><i class="fa fa-times"></i><span class="screenreader">Close Menu</span></button>
+    <ul class="menu">
+      {% for item in site.data.nav %}
+      <li>
+        <a class="{% if page.url contains item[page.lang].path %}active{% endif %}" href="{{item[page.lang].path}}">
+          {{item[page.lang].label}}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

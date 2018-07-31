@@ -1,0 +1,28 @@
+title:
+  en: Contact
+  fr: Joindre
+text:
+  en: Gummi bears gummi bears jelly-o. Cheesecake cake chocolate soufflé. Jelly jelly jujubes donut carrot cake wafer sugar plum lemon drops muffin. Tootsie roll chocolate sweet roll liquorice bonbon. Sesame snaps carrot cake muffin tart gummi bears danish. Pudding donut gingerbread halvah carrot cake sweet croissant sweet roll icing. Apple pie gummies danish brownie gingerbread chocolate bar liquorice. Chocolate bar tiramisu powder jujubes. Bonbon topping toffee ice cream chocolate cake. Bonbon jelly beans sugar plum pudding apple pie liquorice pudding. Sweet roll fruitcake cotton candy liquorice oat cake powder icing. Marzipan macaroon dragée macaroon danish powder cheesecake tart powder. Biscuit toffee halvah. Ice cream sesame snaps chocolate.
+  fr: French content
+fields:
+  name:
+    placeholder:
+      en: FULL NAME
+      fr: NOM
+    label:
+      en: Full Name
+      fr: Nom
+  email:
+    placeholder:
+      en: EMAIL
+      fr: EMAIL
+    label:
+      en: Email
+      fr: Email
+  message:
+    label:
+      en: Message
+      fr: Message
+required:
+  en: Required Field
+  fr: Required Field

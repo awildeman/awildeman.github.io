@@ -1,0 +1,30 @@
+- en:
+    path: /en/about
+    label: About
+  fr:
+    path: /fr/about
+    label: A Propos
+- en:
+    path: /en/whats-new
+    label: What's New
+  fr:
+    path: /fr/whats-new
+    label: Nouvelles
+- en:
+    path: /en/get-involved
+    label: Get Involved
+  fr:
+    path: /fr/get-involved
+    label: Agir
+- en:
+    path: /en/donate
+    label: Donate
+  fr:
+    path: /fr/donate
+    label: Faire un Don
+- en:
+    path: /en/contact
+    label: Contact
+  fr:
+    path: /fr/contact
+    label: Joindre
