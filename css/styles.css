@@ -60,6 +60,7 @@ body {
   background-size: 100% auto;
   background-position: top left;
   background-attachment: fixed;
+  overflow-y: scroll;
 }
 @media (max-width: 1500px) {
   .splash .box {
