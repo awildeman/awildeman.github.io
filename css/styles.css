@@ -619,21 +619,23 @@ footer .copy {
   margin-right: 10px;
 }
 .get-involved #mc_embed_signup .button {
-  height: auto;
+  background-color: #1f4f1b;
+  margin-top: 20px;
   display: inline-block;
-  background: #1f4f1b;
   color: #fff;
-  padding: 20px 60px;
+  padding: 8px 60px;
   text-decoration: none;
-  font-size: 24px;
-  border-radius: 5px;
-  margin: 40px 0;
+  font-size: 17px;
+  text-transform: uppercase;
+  border: none;
   cursor: pointer;
+  height: auto;
+  border-radius: 0;
   transition: background-color 0.2s ease;
 }
 .get-involved #mc_embed_signup .button:hover,
 .get-involved #mc_embed_signup .button:focus {
-  background: #3D9B35;
+  background-color: #3D9B35;
 }
 .get-involved #mc_embed_signup .button:focus {
   outline: 1px solid #3D9B35;
