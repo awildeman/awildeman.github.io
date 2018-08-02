@@ -2,6 +2,9 @@
 layout: page
 ---
 
-<h2>{{site.data.donate.title[page.lang]}}</h2>
-<p>{{site.data.donate.text[page.lang] | newline_to_br | replace: '<br />', '</p><p>'}}</p>
-<a class="button" href="https://nbgreens.nationbuilder.com/donate_fredericton_york" target="_blank">{{site.data.donate.button[page.lang]}}</a>
+<div class="donate">
+  <h2>{{site.data.donate.title[page.lang]}}</h2>
+  <p>{{site.data.donate.text[page.lang] | newline_to_br | replace: '<br />', '</p><p>'}}</p>
+  <a class="button" href="https://nbgreens.nationbuilder.com/donate_fredericton_york" target="_blank">{{site.data.donate.button[page.lang]}}</a>
+  <p class="instructions">{{site.data.donate.instructions[page.lang]}}</p>
+</div>
