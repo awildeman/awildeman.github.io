@@ -24,17 +24,20 @@ fields:
   email:
     placeholder:
       en: EMAIL
-      fr: EMAIL
+      fr: COURRIEL
     label:
       en: Email
-      fr: Email
+      fr: Courriel
   message:
     label:
       en: Message
       fr: Message
 required:
   en: Required Field
-  fr: Required Field
+  fr: Champs Requis
+submit:
+  en: Submit
+  fr: Envoyer
 form-success:
   en: Success, your message has been sent! Thanks for getting in touch!
   fr: Success, your message has been sent! Thanks for getting in touch!
