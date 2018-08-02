@@ -746,3 +746,100 @@ footer {
     }
   }
 }
+
+// Get involved
+.get-involved {
+  #mc_embed_signup {
+    h2 {
+      line-height: normal;
+    }
+
+    .mc-field-group.input-group input {
+      float: left;
+      margin-right: 10px;
+    }
+
+    .button {
+      height: auto;
+      display: inline-block;
+      background: darken(@green, 20%);
+      color: #fff;
+      padding: 20px 60px;
+      text-decoration: none;
+      font-size: 24px;
+      border-radius: 5px;
+      margin: 40px 0;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+
+      &:hover, &:focus {
+        background: @green;
+      }
+
+      &:focus {
+        outline: 1px solid @green;
+        outline-offset: 4px;
+      }
+    }
+
+    .size1of2 {
+      clear: both;
+    }
+  }
+}
+
+// What's new
+.whats-new {
+  .youtube, .facebook {
+    background: #fff;
+    padding: 10px;
+    border: 5px solid @green;
+  }
+
+  .youtube {
+    float: left;
+    margin-bottom: 60px;
+    margin-right: 100px;
+  }
+
+  .facebook {
+    float: left;
+  }
+
+  .clear {
+    clear: both;
+  }
+}
+
+@media (max-width: 900px) {
+  .whats-new {
+    .youtube, .facebook {
+      float: none;
+    }
+
+    // Style hack for full with video: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+    .youtube {
+      margin-right: 0;
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// Donate
+.donate {
+  .instructions {
+    font-style: italic;
+    font-size: 16px;
+  }
+}

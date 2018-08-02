@@ -3,7 +3,7 @@
     label: About
   fr:
     path: /fr/about
-    label: A Propos
+    label: '&#192; Propos'
 - en:
     path: /en/whats-new
     label: What's New
